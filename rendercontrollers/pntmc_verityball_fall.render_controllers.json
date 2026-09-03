@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.pntmc_verityball_fall": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.faces[math.clamp(query.property('pntmc:face_index'), 0, 2)]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.faces": [
+						"Texture.face1",
+						"Texture.face2",
+						"Texture.face3"
+					]
+				}
+			}
+		}
+	}
+}
