@@ -1,0 +1,127 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "pntmc:verity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"pntmc:chase_state": {
+					"type": "int",
+					"range": [0, 2],
+					"default": 0,
+					"client_sync": true
+				}
+			}
+		},
+		"component_groups": {
+			"pntmc:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"pntmc:transform_chase": {
+				"minecraft:transformation": {
+					"into": "pntmc:verity_chase"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": ["pntmc", "verity", "monster", "mob"]
+			},
+			"minecraft:collision_box": {
+				"width": 0.9,
+				"height": 2.2
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 0.85,
+						"height": 2.2,
+						"pivot": [0, 1.1, 0]
+					}
+				]
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 0
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 100000,
+				"max": 100000
+			},
+			"minecraft:movement": {
+				"value": 0.65
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.525
+			},
+			"minecraft:movement.generic": {},
+			"minecraft:jump.static": {},
+			"minecraft:attack": {
+				"damage": 6
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 1000,
+				"probability": 1.0
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:follow_range": {
+				"value": 128,
+				"max": 128
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"trigger": "pntmc:spawn_idle"
+			},
+			"pntmc:spawn_idle": {
+				"queue_command": {
+					"command": ["effect @s slowness 999999 255 true"]
+				}
+			},
+			"pntmc:to_chase": {
+				"queue_command": {
+					"command": ["effect @s clear slowness"]
+				},
+				"add": {
+					"component_groups": ["pntmc:transform_chase"]
+				}
+			},
+			"pntmc:despawn": {
+				"add": {
+					"component_groups": ["pntmc:despawn"]
+				}
+			}
+		}
+	}
+}
