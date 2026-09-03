@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.pntmc_flashlight.hold_first_person_mainhand": {
+			"loop": true,
+			"bones": {
+				"item_root": {
+					"rotation": [-219.7022, -83.944, 58.9237],
+					"position": [-5, 9, -2],
+					"scale": 1
+				},
+				"flashlight": {
+					"rotation": [246.7509, -22.5635, -202.2823],
+					"position": [0, -10, -6],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.pntmc_flashlight.hold_third_person_mainhand": {
+			"loop": true,
+			"bones": {
+				"item_root": {
+					"rotation": [90, 0, -180],
+					"position": [0, 15, -7],
+					"scale": 0.75
+				},
+				"flashlight": {
+					"rotation": [347.5, 0, 0],
+					"position": [0, -5, -3],
+					"scale": 1
+				}
+			}
+		}
+	}
+}
