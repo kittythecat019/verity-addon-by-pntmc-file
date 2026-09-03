@@ -1,0 +1,53 @@
+{
+	"namespace": "hud",
+	"hud_actionbar_text": {
+		"$atext": "$actionbar_text",
+		"visible": "(not (('%.5s' * $atext) = 'pntmc'))"
+	},
+	"root_panel": {
+		"modifications": [
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": [
+					{ "pntmc_verity_jsc_factory@hud.pntmc_verity_jsc_factory": {} }
+				]
+			}
+		]
+	},
+	"pntmc_verity_jsc": {
+		"type": "image",
+		"texture": "textures/pntmcverity/screens/verityjumpscare",
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"size": ["100%", "100%"],
+		"fill": true,
+		"$fit_to_width": true,
+		"alpha": 1,
+		"layer": 999999,
+		"anims": ["@hud.pntmc_verity_jsc_wait"],
+		"$atext": "$actionbar_text",
+		"visible": "($atext = 'pntmcverity')"
+	},
+	"pntmc_verity_jsc_factory": {
+		"type": "panel",
+		"factory": {
+			"name": "hud_actionbar_text_factory",
+			"control_ids": {
+				"hud_actionbar_text": "pntmc_verity_jsc@hud.pntmc_verity_jsc"
+			}
+		}
+	},
+	"pntmc_verity_jsc_wait": {
+		"anim_type": "wait",
+		"duration": 1.2,
+		"next": "@hud.pntmc_verity_jsc_out"
+	},
+	"pntmc_verity_jsc_out": {
+		"anim_type": "alpha",
+		"easing": "in_quart",
+		"duration": 0,
+		"from": 1,
+		"to": 0
+	}
+}
