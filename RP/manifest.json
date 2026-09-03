@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": [
+      "PnTMC"
+    ],
+    "license": "All Rights Reserved",
+    "url": "https://www.youtube.com/@PnTMCvn"
+  },
+  "header": {
+    "name": "ThatMob's Verity [4.0.0] - V26.30",
+    "description": "ThatMob's Verity - by PnTMC",
+    "uuid": "f6d9da65-d6fc-4d2a-ba23-81b8c7fdfde6",
+    "min_engine_version": [
+      1,
+      26,
+      30
+    ],
+    "version": [
+      4,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "f345319f-2164-4d68-8632-fde6224c0c65",
+      "version": [
+        4,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ef21cad0-f70e-4629-ae48-6e7627aacef7",
+      "version": [
+        4,
+        0,
+        0
+      ]
+    }
+  ]
+}
