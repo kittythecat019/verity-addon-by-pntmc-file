@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pntmc:cardboard_box",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/pntmc_cardboardbox"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_cardboardbox"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"inside": "animation.pntmc_cardboardbox.inside",
+				"open": "animation.pntmc_cardboardbox.open",
+				"ctrl": "controller.animation.pntmc_cardboardbox"
+			},
+			"scripts": {
+				"animate": [
+					"ctrl"
+				]
+			}
+		}
+	}
+}

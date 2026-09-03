@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pntmc:verityball",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"face1": "textures/entity/pntmc_verityball",
+				"face2": "textures/entity/pntmc_verityball_2",
+				"face3": "textures/entity/pntmc_verityball_3",
+				"face4": "textures/entity/pntmc_verityball_4",
+				"face5": "textures/entity/pntmc_verityball_5",
+				"face6": "textures/entity/pntmc_verityball_6",
+				"face7": "textures/entity/pntmc_verityball_7",
+				"face8": "textures/entity/pntmc_verityball_8",
+				"face_creepysmile": "textures/entity/pntmc_verityball_creepysmile",
+				"face_serious1": "textures/entity/pntmc_verityball_talkingserious1",
+				"face_serious2": "textures/entity/pntmc_verityball_talkingserious2",
+				"face_serious3": "textures/entity/pntmc_verityball_talkingserious3",
+				"face_blank": "textures/entity/pntmc_verityball_blank",
+				"face_noface": "textures/entity/pntmc_verityball_noface"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_verityball"
+			},
+			"render_controllers": ["controller.render.pntmc_verityball"],
+			"animations": {
+				"look_at_target": "animation.pntmc_verityball.look_at_target",
+				"talk_pulse": "animation.pntmc_verityball.talk_pulse",
+				"talk_pulse_angrylight": "animation.pntmc_verityball.talk_pulse_angrylight",
+				"talk_pulse_angryheavy": "animation.pntmc_verityball.talk_pulse_angryheavy",
+				"move": "animation.pntmc_verityball.move",
+				"ctrl": "controller.animation.pntmc_verityball"
+			},
+			"scripts": {
+				"scale": "0.5",
+				"animate": ["ctrl"]
+			}
+		}
+	}
+}

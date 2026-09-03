@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pntmc:verity_chase",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pntmc_verity_monster"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_verity_monster"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"chase": "animation.pntmc_verity.chase",
+				"look_at_target_body": "animation.pntmc_verity.look_at_target_body",
+				"look_at_target_head": "animation.pntmc_verity.look_at_target_head",
+				"ctrl": "controller.animation.pntmc_verity_chase"
+			},
+			"scripts": {
+				"scale": "2",
+				"animate": ["ctrl"]
+			}
+		}
+	}
+}

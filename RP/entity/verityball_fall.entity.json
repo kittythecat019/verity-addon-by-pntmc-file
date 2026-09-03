@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pntmc:verityball_fall",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"face1": "textures/entity/pntmc_verityball",
+				"face2": "textures/entity/pntmc_verityball_2",
+				"face3": "textures/entity/pntmc_verityball_3"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_verityball"
+			},
+			"render_controllers": ["controller.render.pntmc_verityball_fall"],
+			"animations": {
+				"fall": "animation.pntmc_verityball.fall",
+				"look_at_target": "animation.pntmc_verityball.look_at_target",
+				"ctrl": "controller.animation.pntmc_verityball_fall"
+			},
+			"scripts": {
+				"scale": "0.5",
+				"animate": ["ctrl"]
+			}
+		}
+	}
+}

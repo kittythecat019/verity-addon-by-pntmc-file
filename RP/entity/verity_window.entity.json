@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "pntmc:verity_window",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pntmc_verity_monster"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_verity_monster"
+			},
+			"render_controllers": ["controller.render.default"],
+			"animations": {
+				"look_at_target_body": "animation.pntmc_verity.look_at_target_body",
+				"window_scare": "animation.pntmc_verity_jumpscare.window_scare",
+				"idle": "animation.pntmc_verity_jumpscare.idle"
+			},
+			"scripts": {
+				"scale": "1.35",
+				"animate": [
+					"look_at_target_body",
+					{
+						"idle": "!query.property('pntmc:window_scare')"
+					},
+					{
+						"window_scare": "query.property('pntmc:window_scare')"
+					}
+				]
+			}
+		}
+	}
+}
