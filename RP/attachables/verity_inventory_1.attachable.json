@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "pntmc:verity_inventory_1",
+			"materials": {
+				"default": "entity",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/entity/pntmc_verityball",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_verityball"
+			},
+			"render_controllers": ["controller.render.item_default"],
+			"animations": {
+				"hold_first_person": "animation.pntmc_verityball.hold_first_person",
+				"hold_third_person": "animation.pntmc_verityball.hold_third_person"
+			},
+			"scripts": {
+				"scale": "1",
+				"animate": [
+					{ "hold_first_person": "context.is_first_person == 1.0" },
+					{ "hold_third_person": "context.is_first_person == 0.0" }
+				]
+			}
+		}
+	}
+}

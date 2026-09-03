@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "pntmc:flashlight_off",
+			"materials": {
+				"default": "entity",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/entity/pntmc_flashlight_off",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.pntmc_flashlight"
+			},
+			"render_controllers": ["controller.render.item_default"],
+			"animations": {
+				"hold_first_person_mainhand": "animation.pntmc_flashlight.hold_first_person_mainhand",
+				"hold_third_person": "animation.pntmc_flashlight.hold_third_person_mainhand"
+			},
+			"scripts": {
+				"scale": "1",
+				"animate": [
+					{
+						"hold_first_person_mainhand": "context.is_first_person == 1.0 && context.item_slot == 'main_hand'"
+					},
+					{
+						"hold_third_person": "context.is_first_person == 0.0"
+					}
+				]
+			}
+		}
+	}
+}
