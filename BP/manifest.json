@@ -1,0 +1,61 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": [
+      "PnTMC"
+    ],
+    "license": "All Rights Reserved",
+    "url": "https://www.youtube.com/@PnTMCvn"
+  },
+  "header": {
+    "name": "ThatMob's Verity [4.0.0] - V26.30",
+    "description": "ThatMob's Verity - by PnTMC",
+    "uuid": "ef21cad0-f70e-4629-ae48-6e7627aacef7",
+    "min_engine_version": [
+      1,
+      26,
+      30
+    ],
+    "version": [
+      4,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "0a521097-8406-4a1a-af57-8df34e52b996",
+      "version": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "6ba898a9-f757-4645-b0b1-ab81cdf7528f",
+      "version": [
+        4,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.9.0-beta"
+    },
+    {
+      "uuid": "f6d9da65-d6fc-4d2a-ba23-81b8c7fdfde6",
+      "version": [
+        4,
+        0,
+        0
+      ]
+    }
+  ]
+}
