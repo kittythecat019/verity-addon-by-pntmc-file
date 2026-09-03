@@ -1,0 +1,10 @@
+action.interact.pickup=Pick up
+item.pntmc:verity_inventory_1.name=Verity™
+item.pntmc:verity_inventory_2.name=Verity™
+item.pntmc:verity_inventory_3.name=Verity™
+entity.pntmc:cardboard_box.name=Cardboard Box
+entity.pntmc:verity.name=Verity
+entity.pntmc:verity_chase.name=Verity
+entity.pntmc:verityball.name=Verity
+entity.pntmc:verityball_fall.name=Verity
+item.pntmc:flashlight.name=Flashlight
