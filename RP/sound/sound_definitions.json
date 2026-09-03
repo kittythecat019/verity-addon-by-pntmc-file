@@ -1,0 +1,326 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"pntmc.verity.askme": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/askme"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.whosthere": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/whosthere"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.punchcardboardbox": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/punchcardboardbox"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.opening": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/opening"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.hello": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/hello"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.somethingiscomingin3days": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/somethingiscomingin3days"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 48
+		},
+		"pntmc.verity.chase": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/chase"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.spotted_bonecrack": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/spottedbonecrack"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.mygal_forest": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/mygal_forest"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.mygal_normal": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/mygal_normal"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.matrixsong": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/matrixsong",
+					"stream": true
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.no": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/no"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.no2": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/no"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.yes": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/yes"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.ouch": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/ouch"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.voicelines_en.oof": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/oof"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.voicelines_en.that_hurt": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/that_hurt"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 24
+		},
+		"pntmc.verity.loudmusic": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/loudmusic"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.loudsound": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/loudmusic"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.yes_south": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/yes_south"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.villagers_gone": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/villagers_gone"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.gone": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/gone"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.something_passed": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/something_passed"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.something_hungry": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/something_hungry"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.im_smiling_now": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/im_smiling_now"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.always_looked_like_this": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/always_looked_like_this"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.its_already_over": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/its_already_over"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 48
+		},
+		"pntmc.verity.you_are_mine": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/you_are_mine"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 48
+		},
+		"pntmc.verity.know_everything": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/know_everything"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 32
+		},
+		"pntmc.verity.mobbbbb": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/mobbbbb"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.verity.jumpscare": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/pntmcverity/jumpscare"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 64
+		},
+		"pntmc.flashlight.click": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/pntmcflashlight/flashlight_click"
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 16
+		}
+	}
+}
