@@ -1,0 +1,71 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "pntmc:verity_window",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"pntmc:window_scare": {
+					"type": "bool",
+					"default": false,
+					"client_sync": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": ["pntmc", "verity_window", "inanimate"]
+			},
+			"minecraft:health": {
+				"value": 10000,
+				"max": 10000
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.4
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"pntmc:to_chase": {
+				"add": {
+					"component_groups": ["pntmc:transform_chase"]
+				}
+			},
+			"pntmc:despawn": {
+				"add": {
+					"component_groups": ["pntmc:despawn"]
+				}
+			}
+		},
+		"component_groups": {
+			"pntmc:transform_chase": {
+				"minecraft:transformation": {
+					"into": "pntmc:verity_chase"
+				}
+			},
+			"pntmc:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}
