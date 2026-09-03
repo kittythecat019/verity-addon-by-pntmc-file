@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pntmc:flashlight"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+			" R ",
+			" I ",
+			" G "
+		],
+		"key": {
+			"R": "minecraft:redstone",
+			"I": "minecraft:iron_ingot",
+			"G": "minecraft:glass_pane"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"result": {
+			"item": "pntmc:flashlight_off",
+			"count": 1
+		}
+	}
+}
